@@ -14,6 +14,11 @@ body{
   border-radius: 3px;
 }
 
+span {
+  color: #2ac92a;
+  font-size: 1rem;
+}
+
 @media screen and (max-width: 768px){
   .warning{
     height: 40px;

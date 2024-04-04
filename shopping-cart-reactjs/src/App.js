@@ -58,6 +58,8 @@ const App = () => {
           Item is already in Cart
         </div>
       }
+      <section>
+      <center><span>Made with &#129505;&nbsp;&#169; Het Mamtora</span></center></section>
     </div>
   )
 }
