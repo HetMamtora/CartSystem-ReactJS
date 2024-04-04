@@ -30,21 +30,18 @@ const App = () => {
     setCart([...cart,item]);
   }
 
-  const handleChange = (item,d) => {
-    let ind = 1;
-    cart.forEach((data,index) => {
-      if(data.id === item.id){
-        ind = index;
-      }
+  const handleChange = (item, d) => {
+    const updatedCart = cart.map((cartItem) => {
+        if(cartItem.id === item.id){
+          const newAmount = cartItem.amount + d;
+          const amount = newAmount < 0 ? 0 : newAmount;
+          
+          return { ...cartItem, amount };
+        }
+        return cartItem;
     });
 
-    const tempArr = cart;
-    tempArr[ind].amount += d;
-
-    if(tempArr[ind].amount === 0){
-      tempArr[ind].amount = 1;
-      setCart(...tempArr);
-    }
+    setCart(updatedCart);
   }
 
   return (
