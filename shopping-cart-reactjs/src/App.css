@@ -1,3 +1,30 @@
 body{
   background-color: rgb(36, 35, 35);
 }
+
+.warning{
+  height: 40px;
+  background-color: red;
+  position: absolute;
+  right: 20%;
+  top: 7%;
+  width: 250px;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  color: white;
+  border-radius: 3px;
+}
+
+@media screen and (max-width: 768px){
+  .warning{
+    height: 40px;
+    background-color: red;
+    position: absolute;
+    text-align: center;
+    right: 0;
+    top: 7.2%;
+    width: 250px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: white;
+    border-radius: 3px;
+  }
+}

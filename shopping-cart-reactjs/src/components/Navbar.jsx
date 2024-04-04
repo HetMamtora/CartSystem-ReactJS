@@ -2,7 +2,7 @@ import React from 'react'
 import '@fortawesome/fontawesome-free/css/all.min.css';
 import '../styles/navbar.css'
 
-const Navbar = ({size}) => {
+const Navbar = ({size, setShow}) => {
   return (
     <nav>
         <div className='nav_box'>
@@ -10,7 +10,7 @@ const Navbar = ({size}) => {
                 Book Shop
             </span>
 
-            <div className='cart'>
+            <div className='cart' onClick={() => setShow(false)}>
                 <span>
                     <i className='fas fa-cart-plus'></i>
                 </span>
